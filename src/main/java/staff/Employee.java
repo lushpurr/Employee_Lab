@@ -20,6 +20,12 @@ public abstract class Employee {
         this.name = name;
     }
 
+    public void setNameIfNotNull(String name){
+        if (name != null){
+            this.setName(name);
+        }
+    }
+
     public String getNiNumber() {
         return niNumber;
     }
